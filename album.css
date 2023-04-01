@@ -1,0 +1,276 @@
+/* ---------- General ----------- */
+body {
+  margin: 0;
+  font-family: "Segoe UI";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.navbar-brand,
+.text-white {
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+/* ---------------------- Header -----------------------------------*/
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.head-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10em;
+}
+
+/* ---------------------- Nav Bar ------------------------------------ */
+
+.navbar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  align-items: center
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url(assets/download2.svg);
+  background-size: 100% 100%;
+}
+
+.navbar>.container,
+.navbar>.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  border-color: rgba(255, 255, 255, .1);
+}
+
+/* ------------------------------ Main Body -------------------------------------------- */
+/* ---------------------------- Section --------------------------- */
+h1 {
+  font-size: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.jumbotron {
+  padding: 4rem 2rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+/* --------------- Main & Secondary buttons-----------------------*/
+.main-call {
+  padding: 8px 10px 8px 10px;
+  background: #0275d8;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.secondary-action {
+  padding: 8px 10px 8px 10px;
+  background: #6c757d;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/*--------------------------------------- Typography ----------------------------*/
+
+.col-md-4,
+.col-md-7,
+.col-md-8 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.album {
+  padding: 3rem 0 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+small {
+  float: right;
+}
+
+/* ---------------------------- Footer ------------------------------------------ */
+footer {
+  line-height: 15px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0.25rem;
+}
+
+footer div .backtotop {
+  float: right;
+}
+
+/*------------------------------ Links -----------------------------------*/
+
+a {
+  color: #007bff;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+/* ---------------------------- Buttons --------------------------------------*/
+
+.buttons {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
+}
+
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group>.btn:not(:first-child) {
+  margin-left: -5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto
+}
